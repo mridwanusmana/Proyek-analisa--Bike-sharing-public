@@ -63,7 +63,7 @@ def create_clustering(df):
 
     return clustering
 
-all_df = pd.read_csv("https://github.com/mridwanusmana/Proyek-analisa--Bike-sharing-public/blob/facef1599963f131f47e17d8524b319067622b4d/dashboard/main_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/mridwanusmana/Proyek-analisa--Bike-sharing-public/refs/heads/main/dashboard/main_data.csv")
 
 datetime_columns = ["dteday"]
 all_df.sort_values(by="dteday", inplace=True)
