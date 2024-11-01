@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+from datetime import datetime
 sns.set(style='dark')
     
 def create_daily_rentals_df(df):
@@ -78,6 +79,8 @@ max_date = all_df["dteday"].max()
 with st.sidebar: 
     st.image("https://raw.githubusercontent.com/mridwanusmana/Proyek-analisa--Bike-sharing-public/refs/heads/main/dashboard/logo.png")
     
+    min_date = datetime(2022, 1, 1).date()
+    max_date = datetime(2022, 12, 31).date()
     
     start_date, end_date = st.date_input(
         label='Rentang Waktu',min_value=min_date,
