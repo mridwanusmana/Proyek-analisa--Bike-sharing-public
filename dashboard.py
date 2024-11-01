@@ -76,7 +76,7 @@ min_date = all_df["dteday"].min()
 max_date = all_df["dteday"].max()
 
 with st.sidebar: 
-    st.image("https://github.com/mridwanusmana/Proyek-analisa--Bike-sharing-public/blob/facef1599963f131f47e17d8524b319067622b4d/dashboard/logo.png")
+    st.image("https://raw.githubusercontent.com/mridwanusmana/Proyek-analisa--Bike-sharing-public/refs/heads/main/dashboard/logo.png")
     
     
     start_date, end_date = st.date_input(
